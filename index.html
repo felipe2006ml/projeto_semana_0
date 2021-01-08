@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<body>
+    <div class="mdl-layout mdl-js-layout">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <h2 class="mdl-layout-title">Material Design Lite</h2>
+                
+                <div class="mdl-layout-spacer"></div>
+
+                <nav class="mdl-navigation">
+                    <a href="#" class="mdl-navigation__link">Introdução</a>
+                    <a href="#elementos" class="mdl-navigation__link">Elementos</a>
+                    <a href="#download" class="mdl-navigation__link">Como utilizar</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="mdl-layout__content">
+            <main>
+                <div id="introducao">
+                    <h1>Introdução</h1>
+                    <p>O Material Design Lite é um framework desenvolvido e disponibilizado pela Google, que ajuda na construção e no disign de um Website.</p>
+                    <p>Com ele é possivel criar layouts para o front-end assim como paineis administrativos para o back-end.</p>
+                    <p>Seus componente são criados apartir de HTML, CSS e Javascript</p>
+                    <p>Ele possui diversos componentes disponiveis para utilização como: botões, listas, loading, menus, sliders, tabelas, e caixas de textos. Toda essa pagina foi desenvolvida apartir do framework MDL e abaixo irei mostrar alguns exemplos dos componentes e como baixar.</p>
+                </div>
+
+                <div id="elementos">
+                    <h1>Elementos</h1>
+                    <div>
+                        <h6>Botões</h6>
+                        <!-- Colored FAB button with ripple -->
+                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                            <i class="material-icons">add</i>
+                        </button>
+                        <p>Para adicionar um botão como este acima é muito simples, basta adicionar as seguintes classes a um elemento button do html</p>
+                        <pre><code>class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"</code></pre>
+                    </div>
+
+                    
+                    <div>
+                        <h6>Listas</h6>
+                        <!-- Icon List -->
+                            <style>
+                                .demo-list-icon {
+                                width: 300px;
+                                }
+                                </style>
+                                
+                                <ul class="demo-list-icon mdl-list">
+                                <li class="mdl-list__item">
+                                    <span class="mdl-list__item-primary-content">
+                                    <i class="material-icons mdl-list__item-icon">person</i>
+                                    Bryan Cranston
+                                </span>
+                                </li>
+                                <li class="mdl-list__item">
+                                    <span class="mdl-list__item-primary-content">
+                                    <i class="material-icons mdl-list__item-icon">person</i>
+                                    Aaron Paul
+                                </span>
+                                </li>
+                                <li class="mdl-list__item">
+                                    <span class="mdl-list__item-primary-content">
+                                    <i class="material-icons mdl-list__item-icon">person</i>
+                                    Bob Odenkirk
+                                </span>
+                                </li>
+                                </ul>
+                        <p>Para adicionar uma lista por exemplo adicione as seguintes classes ao ul e li:</p>
+                        <pre><code>class="demo-list-icon mdl-list"</code></pre>
+                        <pre><code>class="mdl-list__item"</code></pre>
+
+                    </div>
+
+                    <div>
+                        <h6>Loading</h6>
+                        <!-- MDL Progress Bar with Indeterminate Progress -->
+                        <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+                        <p>Esse elemento de carregamento(loading) pode ser adicionado a uma div com as seguintes propriedades:</p>
+                        <pre><code>id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"</code></pre>
+                    </div>
+
+                    <div>
+                        <h6>Menus</h6>
+                        <!-- Left aligned menu below button -->
+                        <button id="demo-menu-lower-left"
+                        class="mdl-button mdl-js-button mdl-button--icon">
+                        <i class="material-icons">more_vert</i>
+                        </button>
+
+                        <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+                        for="demo-menu-lower-left">
+                        <li class="mdl-menu__item">Some Action</li>
+                        <li class="mdl-menu__item mdl-menu__item--full-bleed-divider">Another Action</li>
+                        <li disabled class="mdl-menu__item">Disabled Action</li>
+                        <li class="mdl-menu__item">Yet Another Action</li>
+                        </ul>
+
+                        <p>Este menu de exemplo, devemos utilizar o seguinte codigo:</p>
+                        <pre>
+                            <code>
+                                &lt;button id="demo-menu-lower-left"
+                                    class="mdl-button mdl-js-button mdl-button--icon"&gt;
+                                    &lt;i class="material-icons">more_vert&lt;/i&gt;
+                                &lt;/button&gt;
+            
+                                &lt;ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+                                    for="demo-menu-lower-left"&gt;
+                                    &lt;li class="mdl-menu__item">Some Action&lt;/li&gt;
+                                    &lt;li class="mdl-menu__item mdl-menu__item--full-bleed-divider">Another Action&lt;/li&gt;
+                                    &lt;li disabled class="mdl-menu__item">Disabled Action&lt;/li&gt;
+                                    &lt;li class="mdl-menu__item"&gt;Yet Another Action&lt;/li&gt;
+                                &lt;/ul&gt;
+                            </code>
+                        </pre>
+
+                    </div>
+
+                    <div>
+                        <h6>Tabelas</h6>
+                        Data table	
+                        <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+                          <thead>
+                            <tr>
+                              <th class="mdl-data-table__cell--non-numeric">Material</th>
+                              <th>Quantity</th>
+                              <th>Unit price</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
+                              <td>25</td>
+                              <td>$2.90</td>
+                            </tr>
+                            <tr>
+                              <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
+                              <td>50</td>
+                              <td>$1.25</td>
+                            </tr>
+                            <tr>
+                              <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
+                              <td>10</td>
+                              <td>$2.35</td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <p>Para tabelas basta adicionar as seguinte classes:</p>
+                        <p>table:</p>
+                        <pre><code>class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp"</code></pre>
+                        <p>th:</p>
+                        <pre><code>class="mdl-data-table__cell--non-numeric">Material</th></code></pre>
+                        <p>td:</p>
+                        <pre><code>class="mdl-data-table__cell--non-numeric"</code></pre>
+                    </div>
+
+                </div>
+
+                <div id="download">
+                    <h1>Como utilizar</h1>
+
+                    <p>Para utilizarmos todos esses elementos em nossos projetos primeiramente devemos adicionar o seguinte trecho de código no head do elemento HTML:</p>
+                    <pre><code>
+                    &lt;link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"&gt;
+                    &lt;link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"&gt;
+                    &lt;script defer src="https://code.getmdl.io/1.3.0/material.min.js">&lt;/script&gt;
+                    </code></pre>
+                </div>
+
+                
+            </main>
+        </div>
+
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer__left-section">
+              <div class="mdl-logo">Contato</div>
+              <ul class="mdl-mini-footer__link-list">
+                <li><a href="https://www.linkedin.com/in/luis-felipe-lopes-1647a8b9/">Linkedin</a></li>
+                <li><a href="https://github.com/felipe2006ml">Github</a></li>
+              </ul>
+            </div>
+          </footer>
+
+    </div>
+</body>
+</html>

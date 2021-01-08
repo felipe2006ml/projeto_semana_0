@@ -1,0 +1,29 @@
+main {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+h6 {
+    text-decoration: underline;
+    margin-top: 100px;
+}
+
+pre {
+    background-color: rgb(172, 200, 224);
+}
+
+#introducao {
+    width: 100%;
+}
+
+#elementos {
+    width: 100%;
+}
+
+#download {
+    width: 100%;
+}
